@@ -41,33 +41,9 @@ const lowerKeyboard = LOWERKEYS.map((key) => (
 
 function Keyboard() {
 	return (
-		<div
-			style={{
-				color: 'white',
-				fontSize: '1.8em',
-				fontFamily: 'Open Sans',
-			}}
-		>
-			<div
-				style={{
-					height: '70px',
-					display: 'flex',
-					flexDirection: 'row',
-					justifyContent: 'center',
-				}}
-			>
-				{upperKeyboard}
-			</div>
-			<div
-				style={{
-					display: 'flex',
-					flexDirection: 'row',
-					flexWrap: 'wrap',
-					justifyContent: 'center',
-				}}
-			>
-				{lowerKeyboard}
-			</div>
+		<div className={styles.keyboard}>
+			<div className={styles.upperKeyboard}>{upperKeyboard}</div>
+			<div className={styles.lowerKeyboard}>{lowerKeyboard}</div>
 		</div>
 	);
 }

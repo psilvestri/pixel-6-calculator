@@ -1,26 +1,46 @@
+.keyboard {
+	color: white;
+	font-size: 1.8em;
+	font-family: Open Sans;
+}
+
+.upperKeyboard {
+	height: 70px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.lowerKeyboard {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
 /* TODO - come back and split these up since the styling is 'slightly' different on hover for each */
 .upperKey:hover,
 .lowerKey:hover {
-    filter: brightness(150%);
-    cursor: pointer;
+	filter: brightness(150%);
+	cursor: pointer;
 }
 
 .upperKey {
-    width: 65px;
-    height: 55px;
-    background-color: rgb( 42, 45, 50 );
-    margin: 10px 2px;
-    align-content: center;
-    text-align: center;
-    border-radius: 15px;
+	width: 65px;
+	height: 55px;
+	background-color: rgb(42, 45, 50);
+	margin: 10px 2px;
+	align-content: center;
+	text-align: center;
+	border-radius: 15px;
 }
 
 .lowerKey {
-    width: 65px;
-    height: 65px;
-    background-color: rgb( 52, 61, 64 );
-    border-radius: 100%;
-    margin: 1%;
-    align-content: center;
-    text-align: center;
+	width: 65px;
+	height: 65px;
+	background-color: rgb(52, 61, 64);
+	border-radius: 100%;
+	margin: 1%;
+	align-content: center;
+	text-align: center;
 }

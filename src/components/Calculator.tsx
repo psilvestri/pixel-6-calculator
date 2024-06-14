@@ -1,18 +1,10 @@
 import Display from './Display.tsx';
 import Keyboard from './Keyboard.tsx';
+import styles from '../styles/Calculator.module.css';
 
 function Calculator() {
 	return (
-		<div
-			style={{
-				backgroundColor: 'rgb( 42, 45, 50 )',
-				width: '300px',
-				height: '650px',
-				alignItems: 'center',
-				borderRadius: '10px',
-				margin: 'auto',
-			}}
-		>
+		<div className={styles.display}>
 			<Display />
 			<Keyboard />
 		</div>
